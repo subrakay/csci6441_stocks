@@ -24,3 +24,5 @@ CREATE TABLE crowels.transactions (
 ALTER TABLE crowels.transactions
 	ADD FOREIGN KEY (ticker) 
 	REFERENCES company (TICKER);
+
+-- for MySQL the default value of 'date' may cause error, try '1000-01-01' instead of '0000-00-00' or just delete the 'DEFAULT 0000-00-00'.
