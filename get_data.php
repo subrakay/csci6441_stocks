@@ -1,6 +1,6 @@
 <?php
 $ticker = $_GET['ticker'];
-include './include/db.php';
+include('./include/db.php');
 
 $query = "SELECT date, open, high, low, close, volume FROM transactions WHERE ticker = '$ticker' ORDER BY date ASC";
 $rows = array();
